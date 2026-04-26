@@ -1,65 +1,36 @@
-import { Link } from "react-router-dom";
-import { useState } from "react";
-import { Menu, X } from "lucide-react";
+import React, { useRef } from "react";
 
-const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
+function Navbar({ onMenuClick }) {
+  const navGreenRef = useRef(null);
 
   return (
-    <header className=" absolute top-0 left-0 w-full z-[100]">
-      <nav className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-        
-        {/* Logo */}
-        <Link
-          to="/"
-          className=" text-xl tracking-wide font-semibold text-black"
-        >
-          Pragati Films
-        </Link>
-                                                                                                                                        
-        {/* Desktop Menu */}
-        <ul className="hidden md:flex space-x-10 text-sm uppercase tracking-widest text-black font-semibold">
-          <li><Link to="/" className="hover:text-blue-700 transition">Home</Link></li>
-          <li><Link to="/gallery" className="hover:text-blue-700 transition">Gallery</Link></li>
-          <li><Link to="/WeddingFilms" className="hover:text-blue-700 transition">Wedding Films</Link></li>
-          <li><Link to="/Portfolio" className="hover:text-blue-700 transition">fotoowl Portfolio</Link></li>
-          <li><Link to="/PortfolioUpload" className="hover:text-blue-700 transition">Portfolio</Link></li>
-          <li><Link to="/about" className="hover:text-blue-700 transition">About</Link></li>
-          <li><Link to="/contact" className="hover:text-blue-700 transition">Contact</Link></li>
-        </ul>
+    <div className="fixed top-0 left-0 z-40 flex w-full items-start justify-between px-5">
+      <div className="py-4">
+        <h1 className="text-2xl  text-white tracking-[0.3em]  font-extralight leading-tight" style={{fontFamily:""}}>Pragati Films</h1>
+      </div>
 
-        {/* Mobile Hamburger */}
-        <button
-          className="md:hidden text-black"
-          onClick={() => setIsOpen(!isOpen)}
-        >
-          {isOpen ? <X size={28} /> : <Menu size={28} />}
-        </button>
-      </nav>
-     <div
-  className={`
-    md:hidden
-    absolute top-20 left-0 w-full
-    bg-white/10 backdrop-blur-md bg-opacity-95 text-black
-    px-6 py-15 space-y-6 uppercase tracking-widest text-sm
-    transform transition-all duration-500 ease-in-out
-    ${isOpen 
-      ? "opacity-100 translate-y-0 pointer-events-auto" 
-      : "opacity-0 -translate-y-5 pointer-events-none"}
-  `}
->
-  <Link to="/" onClick={() => setIsOpen(false)} className="block">Home</Link>
-  <Link to="/gallery" onClick={() => setIsOpen(false)} className="block">Gallery</Link>
-  <Link to="/WeddingFilms" onClick={() => setIsOpen(false)} className="block">Wedding Films</Link>
-  <Link to="/Portfolio" onClick={() => setIsOpen(false)} className="block">fotoowl Portfolio</Link>
-  <Link to="/PortfolioUpload" onClick={()=>setIsOpen(false)} className="block">Portfolio</Link>
-  <Link to="/about" onClick={() => setIsOpen(false)} className="block">About</Link>
-  <Link to="/contact" onClick={() => setIsOpen(false)} className="block">Contact</Link>
-</div>
-    </header>
+      <div
+        onClick={onMenuClick}
+        onMouseEnter={() => {
+          if (navGreenRef.current) navGreenRef.current.style.height = "100%";
+        }}
+        onMouseLeave={() => {
+          if (navGreenRef.current) navGreenRef.current.style.height = "0%";
+        }}
+        className="relative h-10 w-[17vw] cursor-pointer overflow-hidden bg-black"
+      >
+        <div
+          ref={navGreenRef}
+          className="absolute top-0 h-0 w-full bg-[#D3FD50] transition-all duration-300"
+        />
+
+        <div className="relative z-10 flex h-full flex-col items-end justify-center gap-1 pr-4">
+          <div className="h-0.5 w-15 bg-white" />
+          <div className="h-0.5 w-10 bg-white" />
+        </div>
+      </div>
+    </div>
   );
-};
+}
 
 export default Navbar;
-
-

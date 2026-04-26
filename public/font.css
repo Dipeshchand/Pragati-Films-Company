@@ -59,5 +59,17 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "new1";
+  src:url("./fonts//butler-light.woff") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "new2";
+  src:url("./fonts//va9c4lja2NVIDdIAAoMR5MfuElaRB0zJt08.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
 
 

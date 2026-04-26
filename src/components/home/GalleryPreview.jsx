@@ -1,20 +1,20 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-import img1 from "../../assets/images/im1.jpg";
-import img14 from "../../assets/images/im14.jpg";
-import img2 from "../../assets/images/im2.jpg";
-import img3 from "../../assets/images/im3.jpg";
-import img4 from "../../assets/images/im4.jpg";
-import img5 from "../../assets/images/im5.jpg";
-import img6 from "../../assets/images/im6.jpg";
-import img7 from "../../assets/images/im7.jpg";
-import img8 from "../../assets/images/im8.jpg";
-import img9 from "../../assets/images/im9.jpg";
-import img10 from "../../assets/images/im10.jpg";
-import img11 from "../../assets/images/im11.jpg";
-import img12 from "../../assets/images/im12.jpg";
-import img13 from "../../assets/images/im13.jpg";
+import img1 from "../../assets/images/g1.jpg";
+import img14 from "../../assets/images/g2.jpg";
+import img2 from "../../assets/images/g3.jpg";
+import img3 from "../../assets/images/g5.jpg";
+import img4 from "../../assets/images/g7.jpg";
+import img5 from "../../assets/images/g8.jpg";
+import img6 from "../../assets/images/g9.jpg";
+import img7 from "../../assets/images/g10.jpg";
+import img8 from "../../assets/images/g11.jpg";
+import img9 from "../../assets/images/g12.jpg";
+import img10 from "../../assets/images/g13.jpg";
+import img11 from "../../assets/images/g14.jpg";
+import img12 from "../../assets/images/g15.jpg";
+import img13 from "../../assets/images/g16.jpg";
 
 export default function GalleryPreview() {
   const navigate = useNavigate();
@@ -61,15 +61,15 @@ export default function GalleryPreview() {
               >
                 <div className="text-center px-4 sm:px-0">
                   <h2
-                    className="text-lg sm:text-xl md:text-3xl font-semibold leading-snug"
-                    style={{ fontFamily: "Seasons9" }}
+                    className="text-lg sm:text-xl md:text-3xl text-black  leading-snug"
+                    style={{ fontFamily: "new1" }}
                   >
                     NOT JUST PICTURE
                   </h2>
 
                   <p
-                    className="mt-2 text-sm sm:text-base md:text-lg"
-                    style={{ fontFamily: "Seasons9" }}
+                    className="mt-2 text-sm text-black sm:text-base md:text-lg"
+                    style={{ fontFamily: "new1" }}
                   >
                     It’s a Memory
                   </p>

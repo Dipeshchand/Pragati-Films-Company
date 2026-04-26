@@ -16,6 +16,7 @@ export default function CTA() {
           Book a Seassion
         </a>
       </div>
+
     </div>
   )
 }

@@ -1,5 +1,5 @@
-import React from "react"
-import { motion } from "framer-motion"
+import React from "react";
+import { motion } from "framer-motion";
 import { FaWhatsapp, FaInstagram, FaPhoneAlt } from "react-icons/fa";
 
 const fadeUp = {
@@ -7,16 +7,14 @@ const fadeUp = {
   visible: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.8 }
-  }
-}
+    transition: { duration: 0.8 },
+  },
+};
 
 export default function Intro() {
   return (
     <div className="">
-
-         <div className="fixed right-4  top-1/4  z-50 flex flex-col gap-4 mt-130">
-
+      <div className="fixed right-4  top-1/4  z-50 flex flex-col gap-4 mt-130">
         <a
           href="https://wa.me/918874942473"
           target="_blank"
@@ -44,29 +42,31 @@ export default function Intro() {
       <div
         className="flex justify-center mt-10 text-4xl tracking-wide"
         style={{ fontFamily: "Seasons9", wordSpacing: "0.5rem" }}
-       >
-       <span className=" bg-gradient-to-r  to-red-400">Wedding</span>
-          <span className="text-red-600 ml-2">Films</span>
+      >
+        <span className=" bg-gradient-to-r  to-red-400">Wedding</span>
+        <span className="text-red-600 ml-2">Films</span>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5 px-5 mt-10 mb-10">
-        {["xE9Ox1xsHys", "_3P2pG17Ptc", "4JjiJWF1q1Q", "n2gAciolcLY"].map((id) => (
-          <motion.div
-            key={id}
-            variants={fadeUp}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.25 }}
-          >
-            <iframe
-              loading="lazy"
-              src={`https://www.youtube.com/embed/${id}`}
-              className="w-full aspect-video rounded-lg"
-              allowFullScreen
-            />
-          </motion.div>
-        ))}
+        {["xE9Ox1xsHys", "_3P2pG17Ptc", "4JjiJWF1q1Q", "n2gAciolcLY"].map(
+          (id) => (
+            <motion.div
+              key={id}
+              variants={fadeUp}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.25 }}
+            >
+              <iframe
+                src={`https://www.youtube.com/embed/${id}`}
+                className="w-full aspect-video rounded-lg"
+                title="YouTube video"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            </motion.div>
+          ),
+        )}
       </div>
-
     </div>
-  )
+  );
 }

@@ -23,10 +23,10 @@ export default function FotoowlGallery() {
 
       {/* Page Heading */}
       <div className="text-center mb-8">
-        <h1 className="text-3xl md:text-4xl font-serif font-bold text-gray-800">
+        <h1 className="text-3xl md:text-4xl font-serif font-bold">
           Client Wedding Albums
         </h1>
-        <p className="text-gray-600 mt-2 text-lg">
+        <p className=" mt-2 text-lg">
           Explore full wedding galleries powered by FotoOwl
         </p>
       </div>
