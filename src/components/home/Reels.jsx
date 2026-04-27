@@ -9,7 +9,7 @@ const Hero = () => {
       {/* RIGHT SIDE */}
       <div className="w-full md:w-1/2 h-[50vh] md:h-full overflow-hidden mt-10 ">
         <video
-          src="/videos/videoss.mp4"
+          src="/videos/video11.mp4"
           autoPlay
           muted
           loop

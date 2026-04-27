@@ -34,7 +34,7 @@ function LazyVideo({ video }) {
       )}
 
       <div className="p-4">
-        <p className="font-medium line-clamp-2">
+        <p className="font-medium text-gray-900 line-clamp-2">
           {video.snippet.title}
         </p>
         <p className="text-sm text-gray-500 mt-1">
