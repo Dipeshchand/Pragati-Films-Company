@@ -9,7 +9,7 @@ export default function Footer() {
           {/* LEFT SECTION */}
           <div>
             <h2 className="text-2xl font-bold tracking-wide mb-4">
-              PICTURE PERFECT STUDIO
+              Pragati films
             </h2>
             <p className="text-sm text-gray-300 leading-relaxed">
               Address: Sec -14 near Bank of Baroda, Indira Nagar,

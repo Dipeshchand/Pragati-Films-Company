@@ -77,7 +77,7 @@ export default function Intropage() {
                 className="flex items-center justify-center bg-[#DCCDC2]"
               >
                 <div className="text-center">
-                  <h1 className="text-2xl md:text-5xl lending-tight tracking-[0.2em] mb-4" style={{fontFamily:"new1"}}>
+                  <h1 className="text-2xl md:text-5xl lending-tight  mb-4" style={{fontFamily:"new1"}}>
                     Pragatifilms
                   </h1>
 
