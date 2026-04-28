@@ -22,7 +22,9 @@ const Hero = () => {
         </p>
 
         {/* Button */}
-        <button className="mt-8 border border-white px-6 py-3 text-sm tracking-widest hover:bg-white hover:text-black transition">
+        <button className="mt-8 border border-white px-6 py-3 text-sm tracking-widest hover:bg-white hover:text-black transition"
+        onClick={()=>window.location.href="/weddingFilms"}
+        >
           Begin Your Story
         </button>
       </div>

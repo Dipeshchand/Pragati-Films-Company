@@ -24,19 +24,22 @@ const Hero = () => {
           className="text-4xl md:text-6xl font-extralight leading-tight"
           style={{ fontFamily: "" }}
         >
-          Capturing Love <br />
-          In <span className="italic">Every Shade</span>
+          Your Love Story, <br />
+          Cinematically <span className="italic"> Told</span>
         </h1>
 
         {/* Subtitle */}
         <p className="mt-6 text-gray-400 italic">
-          Specialising in Editorial Images & Narrative Films
+          Cinematic Wedding Films & Storytelling Photography
+        </p>
+        <p className="text-xl text-gray-400 italic ">
+          We craft timeless wedding films that feel as real as your day
         </p>
 
         {/* Button */}
-        <button className="mt-8 border border-white px-6 py-3 text-sm tracking-widest hover:bg-white hover:text-black transition">
+        {/* <button className="mt-8 border border-white px-6 py-3 text-sm tracking-widest hover:bg-white hover:text-black transition">
           FRAME YOUR FOREVER
-        </button>
+        </button> */}
       </div>
     </section>
   );

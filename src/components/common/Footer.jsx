@@ -14,7 +14,7 @@ export default function Footer() {
             <p className="text-sm text-gray-300 leading-relaxed">
               Address: Sec -14 near Bank of Baroda, Indira Nagar,
               <br />
-              Lucknow, Uttar Pradesh 226016
+               Uttar Pradesh 226016
             </p>
 
             <div className="flex justify-center md:justify-start gap-4 mt-4">
@@ -39,13 +39,10 @@ export default function Footer() {
           {/* RIGHT SECTION */}
           <div>
             <p className="mb-2 text-gray-300">
-              +91 7905746104 (Sulok Sharan)
-            </p>
-            <p className="mb-2 text-gray-300">
-              +91 8318253621 (Alok Sharan)
+              +91  8874942473 (Sachin )
             </p>
             <p className="text-gray-300">
-              ppslko7080@gmail.com
+              legal.sachinmohan@gmail.com
             </p>
           </div>
 
@@ -53,7 +50,7 @@ export default function Footer() {
 
         {/* Divider Line */}
         <div className="border-t border-gray-700 mt-8 pt-4 text-center text-gray-500 text-sm">
-          © {new Date().getFullYear()} Picture Perfect Studio
+          © {new Date().getFullYear()} Pragati_films
         </div>
 
       </div>
