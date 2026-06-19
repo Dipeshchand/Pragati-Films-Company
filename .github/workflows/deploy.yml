@@ -11,9 +11,15 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
+      # - git clone
 
       - uses: actions/setup-node@v4
+      # Runner installed Node.js.
         with:
           node-version: 20
+      
+      - run: npm install
+      - run: npm run build
 
-      - run: echo "Build Successful"
+      # - run: echo "Build Successful"
+      # this is print Build Successful
