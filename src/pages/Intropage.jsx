@@ -78,7 +78,7 @@ export default function Intropage() {
               >
                 <div className="text-center">
                   <h1 className="text-2xl md:text-5xl lending-tight  mb-4" style={{fontFamily:"new1"}}>
-                    Pragatifilms
+                    Pragatifilms try
                   </h1>
 
                   <button
