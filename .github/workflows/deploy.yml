@@ -4,22 +4,17 @@ on:
   push:
     branches:
       - main
-
 jobs:
   build:
-    runs-on: ubuntu-latest
-
+    runs-on: ubuntu-latests
     steps:
       - uses: actions/checkout@v4
-      # - git clone
-
+        # git clone
       - uses: actions/setup-node@v4
-      # Runner installed Node.js.
+        # Runner installed Node.js.
         with:
-          node-version: 20
-      
+        node-version: 20
       - run: npm install
       - run: npm run build
-
       # - run: echo "Build Successful"
       # this is print Build Successful
